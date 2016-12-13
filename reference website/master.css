@@ -1,0 +1,103 @@
+body{
+  min-height: 100%;
+  padding:0;
+  margin:0;
+  font-family: sans-serif;
+  font-weight: 600;
+  color:white;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+#head-navigation{
+  width:100%;
+  background-color: lightgreen;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#logo-link{
+  height:75px;
+  width:100px;
+  text-align: center;
+  line-height: 75px;
+  background-color: cornflowerblue;
+}
+#page-name{
+  height:75px;
+  min-width:150px;
+  text-align: center;
+  line-height: 75px;
+  background-color: crimson;
+}
+.button-wrap{
+  margin-left:auto;
+}
+.button{
+  height:75px;
+  background-color: DeepSkyBlue;
+  color:white;
+  text-align:center;
+  line-height:75px;
+  font-weight: 600;
+  width:100px;
+}
+.button:hover{
+  cursor: pointer;
+  background-color:#00b8f7;
+}
+.dropdown-content{
+  position:absolute;
+  width:100px;
+  display:none;
+  flex-direction: column;
+  text-align: center;
+  background-color: DeepSkyBlue;
+  color:white;
+  font-family: sans-serif;
+  font-weight:300;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a{
+  height:35px;
+  line-height:35px;
+  background-color:#00b8f7;
+}
+.dropdown-content a:hover{
+  background-color:#00abe5;
+}
+
+.dropdown-content:hover .dropbtn{
+  background-color:#00b8f7;
+}
+
+/**** flex-stuff ****/
+
+#head-navigation{
+  display:flex;
+}
+.button-wrap{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+#canvasDiv{
+  width: 100%;
+  height: 1025px;
+  margin: auto;
+  background-color: none;
+}
+
+canvas{
+  margin-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 800px;
+  background-color: blue;
+}
